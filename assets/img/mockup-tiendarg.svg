@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgTiendarg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#090D16" />
+    </linearGradient>
+    <linearGradient id="accentTiendarg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00E599" />
+      <stop offset="100%" stop-color="#3B82F6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo de la tarjeta / ventana -->
+  <rect width="600" height="340" rx="12" fill="url(#bgTiendarg)" stroke="#334155" stroke-width="1.5" />
+  
+  <!-- Barra superior del sistema (Window Header) -->
+  <rect width="600" height="36" rx="12" fill="#111827" />
+  <rect y="24" width="600" height="12" fill="#111827" />
+  <line x1="0" y1="36" x2="600" y2="36" stroke="#1F2937" stroke-width="1" />
+  
+  <circle cx="20" cy="18" r="4.5" fill="#EF4444" />
+  <circle cx="36" cy="18" r="4.5" fill="#F59E0B" />
+  <circle cx="52" cy="18" r="4.5" fill="#10B981" />
+  
+  <rect x="180" y="8" width="240" height="20" rx="4" fill="#1E293B" />
+  <text x="300" y="22" fill="#94A3B8" font-family="'IBM Plex Mono', monospace" font-size="10" text-anchor="middle">tiendarg.app/dashboard/pos</text>
+
+  <!-- Barra lateral (Sidebar POS) -->
+  <rect x="16" y="50" width="110" height="274" rx="8" fill="url(#cardGrad)" stroke="#1F2937" />
+  <text x="30" y="78" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="12">TiendArg</text>
+  <rect x="30" y="86" width="30" height="3" fill="#00E599" rx="1.5" />
+  
+  <!-- Items de menú lateral -->
+  <rect x="24" y="104" width="94" height="24" rx="4" fill="rgba(0, 229, 153, 0.15)" stroke="#00E599" stroke-width="1" />
+  <text x="34" y="120" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">● POS Terminal</text>
+  
+  <rect x="24" y="136" width="94" height="22" rx="4" fill="#0F172A" />
+  <text x="34" y="151" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">📦 Stock / AFIP</text>
+  
+  <rect x="24" y="166" width="94" height="22" rx="4" fill="#0F172A" />
+  <text x="34" y="181" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">📊 Facturación</text>
+
+  <rect x="24" y="196" width="94" height="22" rx="4" fill="#0F172A" />
+  <text x="34" y="211" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">🌐 E-Commerce</text>
+
+  <!-- Panel Central: Métricas rápidas (KPIs) -->
+  <g transform="translate(140, 50)">
+    <!-- KPI 1 -->
+    <rect width="138" height="64" rx="8" fill="url(#cardGrad)" stroke="#1F2937" />
+    <text x="14" y="24" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">VENTAS HOY</text>
+    <text x="14" y="48" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="17">$ 1,482,900</text>
+    <text x="96" y="48" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">+24%</text>
+
+    <!-- KPI 2 -->
+    <rect x="150" width="138" height="64" rx="8" fill="url(#cardGrad)" stroke="#1F2937" />
+    <text x="164" y="24" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">COMPROBANTES AFIP</text>
+    <text x="164" y="48" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="17">342 CAE</text>
+    <text x="246" y="48" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">OK</text>
+
+    <!-- KPI 3 -->
+    <rect x="300" width="144" height="64" rx="8" fill="url(#cardGrad)" stroke="#1F2937" />
+    <text x="314" y="24" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">LATENCIA POS</text>
+    <text x="314" y="48" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-weight="bold" font-size="17">12 ms</text>
+    <text x="385" y="48" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="10">.NET 11</text>
+  </g>
+
+  <!-- Gráfico de ventas en tiempo real (Trend Chart) -->
+  <g transform="translate(140, 126)">
+    <rect width="444" height="198" rx="8" fill="url(#cardGrad)" stroke="#1F2937" />
+    <text x="18" y="26" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="12">Rendimiento Transaccional en Tiempo Real</text>
+    <text x="340" y="26" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">● WEBSOCKETS ACTIVO</text>
+    
+    <!-- Ejes y líneas de fondo -->
+    <line x1="18" y1="50" x2="426" y2="50" stroke="#1F2937" stroke-dasharray="3 3" />
+    <line x1="18" y1="95" x2="426" y2="95" stroke="#1F2937" stroke-dasharray="3 3" />
+    <line x1="18" y1="140" x2="426" y2="140" stroke="#1F2937" stroke-dasharray="3 3" />
+
+    <!-- Área del gráfico -->
+    <path d="M 25 150 Q 80 135 130 90 T 230 110 T 330 60 T 420 40 L 420 170 L 25 170 Z" fill="rgba(0, 229, 153, 0.08)" />
+    <!-- Línea trazadora -->
+    <path d="M 25 150 Q 80 135 130 90 T 230 110 T 330 60 T 420 40" fill="none" stroke="url(#accentTiendarg)" stroke-width="3" stroke-linecap="round" />
+    
+    <!-- Puntos activos del gráfico -->
+    <circle cx="130" cy="90" r="4" fill="#00E599" stroke="#0F172A" stroke-width="2" />
+    <circle cx="230" cy="110" r="4" fill="#00E599" stroke="#0F172A" stroke-width="2" />
+    <circle cx="330" cy="60" r="4" fill="#3B82F6" stroke="#0F172A" stroke-width="2" />
+    <circle cx="420" cy="40" r="5" fill="#00E599" stroke="#0F172A" stroke-width="2" />
+
+    <!-- Resumen inferior -->
+    <text x="25" y="185" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">08:00</text>
+    <text x="120" y="185" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">12:00</text>
+    <text x="220" y="185" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">16:00</text>
+    <text x="320" y="185" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">20:00</text>
+    <text x="400" y="185" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9">AHORA</text>
+  </g>
+</svg>

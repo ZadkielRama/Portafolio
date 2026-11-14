@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgSoftwarg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D16" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="neonEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E599" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+    <linearGradient id="neonPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" />
+      <stop offset="100%" stop-color="#6366F1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo base con borde -->
+  <rect width="600" height="340" rx="12" fill="url(#bgSoftwarg)" stroke="#334155" stroke-width="1.5" />
+
+  <!-- Encabezado de consola / terminal -->
+  <rect width="600" height="36" rx="12" fill="#111827" />
+  <rect y="24" width="600" height="12" fill="#111827" />
+  <line x1="0" y1="36" x2="600" y2="36" stroke="#1F2937" stroke-width="1" />
+  
+  <circle cx="20" cy="18" r="4.5" fill="#EF4444" />
+  <circle cx="36" cy="18" r="4.5" fill="#F59E0B" />
+  <circle cx="52" cy="18" r="4.5" fill="#10B981" />
+  <text x="300" y="22" fill="#94A3B8" font-family="'IBM Plex Mono', monospace" font-size="10" text-anchor="middle">softwarg.ar // AI Orchestration Core</text>
+
+  <!-- Nodos y Pipeline de Flujo de IA -->
+  <!-- Nodo 1: Ingestion & Input -->
+  <g transform="translate(30, 70)">
+    <rect width="140" height="85" rx="8" fill="#1E293B" stroke="#334155" />
+    <text x="14" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">INPUT_STREAM</text>
+    <text x="14" y="44" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="12">Documentos & Datos</text>
+    <text x="14" y="64" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">PDF, SQL, Webhooks</text>
+    <circle cx="120" cy="20" r="3" fill="#00E599" />
+  </g>
+
+  <!-- Flecha 1 -->
+  <line x1="170" y1="112" x2="225" y2="112" stroke="#00E599" stroke-width="2" stroke-dasharray="4 3" />
+  <polygon points="225,108 233,112 225,116" fill="#00E599" />
+
+  <!-- Nodo Central 2: Agentes & RAG -->
+  <g transform="translate(235, 60)">
+    <rect width="160" height="105" rx="8" fill="#1E293B" stroke="url(#neonEmerald)" stroke-width="1.5" />
+    <rect x="10" y="10" width="140" height="20" rx="4" fill="rgba(0, 229, 153, 0.15)" />
+    <text x="80" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10" text-anchor="middle" font-weight="bold">AI AGENTS ROUTER</text>
+    <text x="14" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11">• DeepSeek / GPT-4o / Claude</text>
+    <text x="14" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Embeddings Vector Store</text>
+    <text x="14" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">• Validación de Esquemas</text>
+  </g>
+
+  <!-- Flecha 2 -->
+  <line x1="395" y1="112" x2="445" y2="112" stroke="#00E599" stroke-width="2" stroke-dasharray="4 3" />
+  <polygon points="445,108 453,112 445,116" fill="#00E599" />
+
+  <!-- Nodo 3: Ejecución & Salida -->
+  <g transform="translate(455, 70)">
+    <rect width="115" height="85" rx="8" fill="#1E293B" stroke="#334155" />
+    <text x="12" y="24" fill="#38BDF8" font-family="'IBM Plex Mono', monospace" font-size="10">AUTOMATION</text>
+    <text x="12" y="44" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-weight="bold" font-size="12">Acción Final</text>
+    <text x="12" y="64" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">Turnos, CRM, AFIP</text>
+    <circle cx="98" cy="20" r="3" fill="#38BDF8" />
+  </g>
+
+  <!-- Consola interactiva inferior (Live Logs) -->
+  <g transform="translate(30, 185)">
+    <rect width="540" height="135" rx="8" fill="#050505" stroke="#1F2937" />
+    <text x="16" y="22" fill="#475569" font-family="'IBM Plex Mono', monospace" font-size="10">// LIVE EXECUTION LOGS — WORKER #04</text>
+    
+    <text x="16" y="44" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">2026-11-13 17:30:02 [INFO] Dispatching semantic query to multi-agent legal pipe</text>
+    <text x="16" y="64" fill="#F8FAFC" font-family="'IBM Plex Mono', monospace" font-size="10">2026-11-13 17:30:03 [AI_CORE] Model: DeepSeek-V3 (temp=0.1) &gt; Context: 14KB</text>
+    <text x="16" y="84" fill="#F8FAFC" font-family="'IBM Plex Mono', monospace" font-size="10">2026-11-13 17:30:04 [RAG_VEC] Nearest neighbors extracted with cosine sim 0.94</text>
+    <text x="16" y="104" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10">2026-11-13 17:30:05 [COMPLETED] Output synthesized in 280ms. HTTP 200 OK</text>
+    <text x="16" y="122" fill="#64748B" font-family="'IBM Plex Mono', monospace" font-size="9">STATUS: 99.98% UPTIME • ENTERPRISE SLA GUARANTEED</text>
+  </g>
+</svg>

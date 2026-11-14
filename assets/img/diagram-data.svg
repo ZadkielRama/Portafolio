@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="200" rx="8" fill="url(#dataGrad)" stroke="#334155" stroke-width="1" />
+  <text x="20" y="24" fill="#10B981" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="bold">// HIGH INTEGRITY DATA ENGINES, SPATIAL GIS &amp; CACHE</text>
+
+  <!-- Bloque 1: Relacional & Spatial -->
+  <g transform="translate(20, 42)">
+    <rect width="170" height="135" rx="6" fill="#0F172A" stroke="#10B981" stroke-width="1.5" />
+    <rect x="8" y="10" width="154" height="20" rx="3" fill="rgba(16, 185, 129, 0.15)" />
+    <text x="85" y="24" fill="#10B981" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">RELATIONAL &amp; SPATIAL GIS</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• SQL Server &amp; Spatial Types</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Oracle Cartografía &amp; AutoCAD</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• PostgreSQL + PostGIS</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Índices Espaciales / Geofences</text>
+    <text x="12" y="124" fill="#10B981" font-family="'IBM Plex Mono', monospace" font-size="9">[ACID Compliance]</text>
+  </g>
+
+  <!-- Flecha bidireccional -->
+  <line x1="192" y1="110" x2="220" y2="110" stroke="#10B981" stroke-width="2" />
+  <polygon points="194,106 188,110 194,114" fill="#10B981" />
+  <polygon points="218,106 224,110 218,114" fill="#10B981" />
+
+  <!-- Bloque 2: Caché Distribuido & Pub/Sub -->
+  <g transform="translate(226, 42)">
+    <rect width="170" height="135" rx="6" fill="#0F172A" stroke="#EF4444" stroke-width="1.5" />
+    <rect x="8" y="10" width="154" height="20" rx="3" fill="rgba(239, 68, 68, 0.15)" />
+    <text x="85" y="24" fill="#EF4444" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">IN-MEMORY &amp; PUB/SUB</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Redis Cluster Cache</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Key-Value Store &amp; TTL</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Real-Time SignalR Backplane</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Sub-millisecond Read / Write</text>
+    <text x="12" y="124" fill="#EF4444" font-family="'IBM Plex Mono', monospace" font-size="9">[0.8ms Latency]</text>
+  </g>
+
+  <!-- Flecha bidireccional -->
+  <line x1="398" y1="110" x2="426" y2="110" stroke="#10B981" stroke-width="2" />
+  <polygon points="400,106 394,110 400,114" fill="#10B981" />
+  <polygon points="424,106 430,110 424,114" fill="#10B981" />
+
+  <!-- Bloque 3: NoSQL & AI Vector Stores -->
+  <g transform="translate(432, 42)">
+    <rect width="150" height="135" rx="6" fill="#0F172A" stroke="#8B5CF6" stroke-width="1.5" />
+    <rect x="8" y="10" width="134" height="20" rx="3" fill="rgba(139, 92, 246, 0.15)" />
+    <text x="75" y="24" fill="#8B5CF6" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">NOSQL &amp; VECTOR AI</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Vector Store (RAG)</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• DynamoDB / Firestore</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Embeddings Indexes</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• High Throughput I/O</text>
+    <text x="12" y="124" fill="#8B5CF6" font-family="'IBM Plex Mono', monospace" font-size="9">[AI Search]</text>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="webGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="200" rx="8" fill="url(#webGrad)" stroke="#334155" stroke-width="1" />
+  <text x="20" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="bold">// REACTIVE WEB, REAL-TIME &amp; CLIENT-SIDE RUNTIME</text>
+
+  <!-- Bloque 1: Blazor WebAssembly / PWA -->
+  <g transform="translate(20, 42)">
+    <rect width="170" height="135" rx="6" fill="#0F172A" stroke="#512BD4" stroke-width="1.5" />
+    <rect x="8" y="10" width="154" height="20" rx="3" fill="rgba(81, 43, 212, 0.2)" />
+    <text x="85" y="24" fill="#A78BFA" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">BLAZOR WASM &amp; PWA</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• C# ejecutando en Browser</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• WebAssembly (.wasm) AOT</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Offline PWA Service Workers</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Shared DTOs con Backend</text>
+    <text x="12" y="124" fill="#A78BFA" font-family="'IBM Plex Mono', monospace" font-size="9">[Zero JS Bloat]</text>
+  </g>
+
+  <!-- Flecha bidireccional SignalR -->
+  <line x1="192" y1="110" x2="220" y2="110" stroke="#00E599" stroke-width="2" />
+  <polygon points="194,106 188,110 194,114" fill="#00E599" />
+  <polygon points="218,106 224,110 218,114" fill="#00E599" />
+
+  <!-- Bloque 2: WebSockets / SignalR -->
+  <g transform="translate(226, 42)">
+    <rect width="170" height="135" rx="6" fill="#0F172A" stroke="#00E599" stroke-width="1.5" />
+    <rect x="8" y="10" width="154" height="20" rx="3" fill="rgba(0, 229, 153, 0.15)" />
+    <text x="85" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">SIGNALR WEBSOCKETS</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Full-Duplex Bidireccional</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Push instantáneo a clientes</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Reintento con Long Polling</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Sincronización POS &amp; Juegos</text>
+    <text x="12" y="124" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9">[Low Latency]</text>
+  </g>
+
+  <!-- Flecha bidireccional -->
+  <line x1="398" y1="110" x2="426" y2="110" stroke="#00E599" stroke-width="2" />
+  <polygon points="400,106 394,110 400,114" fill="#00E599" />
+  <polygon points="424,106 430,110 424,114" fill="#00E599" />
+
+  <!-- Bloque 3: Modern UI & Node.js -->
+  <g transform="translate(432, 42)">
+    <rect width="150" height="135" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="8" y="10" width="134" height="20" rx="3" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="75" y="24" fill="#38BDF8" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">MODERN UI &amp; STACK</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Tailwind CSS Utilitario</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• TypeScript &amp; Node.js</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• .NET MAUI / Mobile GIS</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Diseño Responsivo Fluido</text>
+    <text x="12" y="124" fill="#38BDF8" font-family="'IBM Plex Mono', monospace" font-size="9">[Cross-Platform]</text>
+  </g>
+</svg>

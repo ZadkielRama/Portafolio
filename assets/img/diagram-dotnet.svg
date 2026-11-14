@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="dotnetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="200" rx="8" fill="url(#dotnetGrad)" stroke="#334155" stroke-width="1" />
+  
+  <text x="20" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="bold">// CLEAN ARCHITECTURE &amp; CQRS (.NET 11)</text>
+
+  <!-- Capa 1: Web API / Presentation -->
+  <g transform="translate(20, 42)">
+    <rect width="125" height="135" rx="6" fill="#0F172A" stroke="#38BDF8" stroke-width="1.5" />
+    <rect x="8" y="10" width="109" height="20" rx="3" fill="rgba(56, 189, 248, 0.15)" />
+    <text x="62" y="24" fill="#38BDF8" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">PRESENTATION</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Minimal APIs</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• ASP.NET Core</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• SignalR Hubs</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• OpenAPI / JWT</text>
+    <text x="12" y="124" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9">[.NET 11]</text>
+  </g>
+
+  <!-- Flecha 1 -->
+  <line x1="147" y1="110" x2="168" y2="110" stroke="#00E599" stroke-width="2" />
+  <polygon points="168,106 174,110 168,114" fill="#00E599" />
+
+  <!-- Capa 2: Application / MediatR -->
+  <g transform="translate(176, 42)">
+    <rect width="125" height="135" rx="6" fill="#0F172A" stroke="#00E599" stroke-width="1.5" />
+    <rect x="8" y="10" width="109" height="20" rx="3" fill="rgba(0, 229, 153, 0.15)" />
+    <text x="62" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">APPLICATION</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• CQRS Handlers</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• MediatR Pipelines</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• FluentValidation</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Use Cases &amp; DTOs</text>
+    <text x="12" y="124" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9">[Orchestration]</text>
+  </g>
+
+  <!-- Flecha 2 -->
+  <line x1="303" y1="110" x2="324" y2="110" stroke="#00E599" stroke-width="2" />
+  <polygon points="324,106 330,110 324,114" fill="#00E599" />
+
+  <!-- Capa 3: Domain Core -->
+  <g transform="translate(332, 42)">
+    <rect width="115" height="135" rx="6" fill="#0F172A" stroke="#F59E0B" stroke-width="1.5" />
+    <rect x="8" y="10" width="99" height="20" rx="3" fill="rgba(245, 158, 11, 0.15)" />
+    <text x="57" y="24" fill="#F59E0B" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">DOMAIN CORE</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Entities &amp; Roots</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Value Objects</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Domain Events</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Zero External Libs</text>
+    <text x="12" y="124" fill="#F59E0B" font-family="'IBM Plex Mono', monospace" font-size="9">[Pure C#]</text>
+  </g>
+
+  <!-- Flecha 3 -->
+  <line x1="449" y1="110" x2="470" y2="110" stroke="#00E599" stroke-width="2" />
+  <polygon points="470,106 476,110 470,114" fill="#00E599" />
+
+  <!-- Capa 4: Infrastructure -->
+  <g transform="translate(478, 42)">
+    <rect width="105" height="135" rx="6" fill="#0F172A" stroke="#A855F7" stroke-width="1.5" />
+    <rect x="8" y="10" width="89" height="20" rx="3" fill="rgba(168, 85, 247, 0.15)" />
+    <text x="52" y="24" fill="#A855F7" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">INFRASTRUCTURE</text>
+    <text x="10" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• EF Core / Dapper</text>
+    <text x="10" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• SQL Server / PG</text>
+    <text x="10" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Redis Pub/Sub</text>
+    <text x="10" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• AFIP Services</text>
+    <text x="10" y="124" fill="#A855F7" font-family="'IBM Plex Mono', monospace" font-size="9">[Adapters]</text>
+  </g>
+</svg>

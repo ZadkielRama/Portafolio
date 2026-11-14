@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="200" rx="8" fill="url(#cloudGrad)" stroke="#334155" stroke-width="1" />
+  <text x="20" y="24" fill="#38BDF8" font-family="'IBM Plex Mono', monospace" font-size="10" font-weight="bold">// CLOUD SERVERLESS &amp; CI/CD PIPELINE (AWS + AZURE DEVOPS)</text>
+
+  <!-- Paso 1: Azure DevOps CI/CD -->
+  <g transform="translate(20, 42)">
+    <rect width="130" height="135" rx="6" fill="#0F172A" stroke="#0078D4" stroke-width="1.5" />
+    <rect x="8" y="10" width="114" height="20" rx="3" fill="rgba(0, 120, 212, 0.2)" />
+    <text x="65" y="24" fill="#38BDF8" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">AZURE DEVOPS</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Git Repos</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• YAML Pipelines</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Automated Tests</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Docker Images</text>
+    <text x="12" y="124" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9">[Build &amp; Release]</text>
+  </g>
+
+  <!-- Flecha 1 -->
+  <line x1="152" y1="110" x2="178" y2="110" stroke="#38BDF8" stroke-width="2" />
+  <polygon points="178,106 184,110 178,114" fill="#38BDF8" />
+
+  <!-- Paso 2: AWS Lambda & Serverless -->
+  <g transform="translate(186, 42)">
+    <rect width="130" height="135" rx="6" fill="#0F172A" stroke="#FF9900" stroke-width="1.5" />
+    <rect x="8" y="10" width="114" height="20" rx="3" fill="rgba(255, 153, 0, 0.2)" />
+    <text x="65" y="24" fill="#FF9900" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">AWS SERVERLESS</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• AWS Lambda (.NET/Py)</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• EventBridge Triggers</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• S3 Storage Buckets</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• CloudWatch Metrics</text>
+    <text x="12" y="124" fill="#FF9900" font-family="'IBM Plex Mono', monospace" font-size="9">[Auto-Scalable]</text>
+  </g>
+
+  <!-- Flecha 2 -->
+  <line x1="318" y1="110" x2="344" y2="110" stroke="#38BDF8" stroke-width="2" />
+  <polygon points="344,106 350,110 344,114" fill="#38BDF8" />
+
+  <!-- Paso 3: Jobs Asíncronos & GCP -->
+  <g transform="translate(352, 42)">
+    <rect width="115" height="135" rx="6" fill="#0F172A" stroke="#4285F4" stroke-width="1.5" />
+    <rect x="8" y="10" width="99" height="20" rx="3" fill="rgba(66, 133, 244, 0.2)" />
+    <text x="57" y="24" fill="#4285F4" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">ASYNC WORKERS</text>
+    <text x="12" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Python Pipelines</text>
+    <text x="12" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• GCP Cloud Run</text>
+    <text x="12" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• SQS / Queue Jobs</text>
+    <text x="12" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Zero CPU Bloat</text>
+    <text x="12" y="124" fill="#4285F4" font-family="'IBM Plex Mono', monospace" font-size="9">[Background]</text>
+  </g>
+
+  <!-- Flecha 3 -->
+  <line x1="469" y1="110" x2="495" y2="110" stroke="#38BDF8" stroke-width="2" />
+  <polygon points="495,106 501,110 495,114" fill="#38BDF8" />
+
+  <!-- Paso 4: Monitoreo & SLA -->
+  <g transform="translate(503, 42)">
+    <rect width="82" height="135" rx="6" fill="#0F172A" stroke="#00E599" stroke-width="1.5" />
+    <rect x="6" y="10" width="70" height="20" rx="3" fill="rgba(0, 229, 153, 0.2)" />
+    <text x="41" y="24" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="bold" text-anchor="middle">SLA &amp; OPS</text>
+    <text x="8" y="52" fill="#F8FAFC" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• 99.99%</text>
+    <text x="8" y="70" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Tracing</text>
+    <text x="8" y="88" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Alerts</text>
+    <text x="8" y="106" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="10">• Secrets</text>
+    <text x="8" y="124" fill="#00E599" font-family="'IBM Plex Mono', monospace" font-size="9">[Healthy]</text>
+  </g>
+</svg>
