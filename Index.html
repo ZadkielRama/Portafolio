@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adrián Ezequiel Ramírez — Systems & AI Architect. Más de 9 años diseñando y migrando sistemas críticos .NET y arquitecturas de Inteligencia Artificial." />
+  <meta name="author" content="Adrián Ezequiel Ramírez Bernal" />
+  <meta name="robots" content="index, follow" />
+  <title>Adrián Ezequiel Ramírez — Systems & AI Architect</title>
+
+  <!-- Tipografías Oficiales -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Framework de Utilidades CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Hoja de Estilos Separada (Buenas Prácticas) -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Prevención de destello de tema (Anti-FOUC) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('ramirez_theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (saved === 'dark' || (!saved && prefersDark)) {
+        document.documentElement.classList.add('dark');
+      }
+    })();
+  </script>
+</head>
+<body class="grid-bg min-h-screen flex flex-col justify-between antialiased">
+
+  <!-- Barra Superior del Sistema (Top System Bar) -->
+  <header class="surface-header backdrop-blur-sm sticky top-0 z-40">
+    <div class="max-w-6xl mx-auto px-4 h-12 flex items-center justify-between text-xs font-mono">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-2 font-semibold text-main">
+          <span class="w-2 h-2 inline-block" style="background-color: var(--accent);"></span>
+          RAMIREZ.SYS
+        </span>
+        <span class="hidden sm:inline text-mut">|</span>
+        <span class="hidden sm:inline text-sec">EXP: 2017—2026</span>
+      </div>
+
+      <!-- Botón Paleta de Comandos (Ctrl + K) -->
+      <button type="button" data-action="open-cmd" class="surface-subpanel flex items-center gap-3 px-3 py-1 text-sec hover:text-main transition cursor-pointer">
+        <span class="hidden sm:inline">Buscar comando o stack...</span>
+        <span class="sm:hidden">Comandos...</span>
+        <kbd class="surface-panel px-1.5 py-0.5 text-[10px] text-main">Ctrl K</kbd>
+      </button>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Selector Modo Claro / Oscuro -->
+        <button type="button" id="themeBtn" class="surface-subpanel px-2.5 py-1 text-main hover:border-emerald-500 transition flex items-center gap-1.5 cursor-pointer" title="Alternar modo claro / oscuro">
+          <span id="themeIcon">☾</span>
+          <span id="themeLabel" class="hidden md:inline">OSCURO</span>
+        </button>
+
+        <!-- Botón Contacto Seguro (Anti-Spam) -->
+        <button type="button" id="contactHeaderBtn" class="bg-acc px-2.5 py-1 font-semibold hover:opacity-90 transition cursor-pointer" title="Contactar vía correo electrónico seguro">
+          CONTACTO
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Espacio Principal de Trabajo (Workspace) -->
+  <main class="max-w-6xl w-full mx-auto px-4 py-8 flex-1">
+    
+    <!-- Encabezado Arquitectónico con Perfil Visual -->
+    <div class="grid lg:grid-cols-12 surface-panel mb-8 overflow-hidden">
+      <div class="lg:col-span-8 p-6 sm:p-10 border-b lg:border-b-0 lg:border-r border-theme flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-4 mb-4">
+            <div class="font-mono text-xs text-acc tracking-widest uppercase font-semibold">
+              [ SOFTWARE ARCHITECT • FULL STACK .NET • AI ENGINEER ]
+            </div>
+            <span class="hidden sm:inline-block font-mono text-[11px] text-mut border border-theme px-2 py-0.5 rounded">
+              NODE_ID: ARB-2026
+            </span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-5">
+            <!-- Avatar Técnico Interactivo con Estado en Vivo -->
+            <div class="avatar-wrapper shrink-0">
+              <img src="assets/img/avatar.svg" alt="Adrián Ezequiel Ramírez — Systems & AI Architect" class="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover" />
+              <span class="absolute -bottom-2 -right-1 bg-acc text-[10px] font-mono px-2 py-0.5 rounded font-bold shadow-lg flex items-center gap-1.5" title="Disponible para consultoría y arquitectura">
+                <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span> ONLINE
+              </span>
+            </div>
+
+            <div>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-main mb-2">
+                Adrián Ezequiel Ramírez
+              </h1>
+              <p class="font-mono text-xs text-sec">
+                Buenos Aires, Argentina • Fundador de <span class="text-acc font-semibold">SoftwArg</span>
+              </p>
+            </div>
+          </div>
+
+          <p class="text-sec text-sm sm:text-base leading-relaxed max-w-2xl">
+            Más de 9 años diseñando y migrando sistemas críticos: desde <span class="text-main font-mono font-medium">.NET Framework 3.5 / 4.5</span> hasta <span class="text-main font-mono font-medium">.NET 11</span>, motores espaciales GIS, plataformas financieras y <span class="text-main font-mono font-medium">sistemas agénticos con IA</span> en producción.
+          </p>
+        </div>
+
+        <div class="mt-6 pt-4 border-t border-theme flex flex-wrap gap-2 font-mono text-[11px]">
+          <span class="surface-subpanel px-2.5 py-1 text-sec border border-theme">⚡ Clean Architecture</span>
+          <span class="surface-subpanel px-2.5 py-1 text-sec border border-theme">🧠 Multi-Agent RAG</span>
+          <span class="surface-subpanel px-2.5 py-1 text-sec border border-theme">☁ AWS & Azure Serverless</span>
+          <span class="surface-subpanel px-2.5 py-1 text-sec border border-theme">🗺 SQL Spatial & PostGIS</span>
+        </div>
+      </div>
+
+      <!-- Ficha Técnica Resumen -->
+      <div class="lg:col-span-4 p-6 font-mono text-xs flex flex-col justify-between" style="background-color: var(--bg-subpanel);">
+        <div class="space-y-3">
+          <div class="flex justify-between border-b border-theme pb-2">
+            <span class="text-mut">ACTUALIDAD</span>
+            <span class="text-main font-medium">LA NACION + (2026)</span>
+          </div>
+          <div class="flex justify-between border-b border-theme pb-2">
+            <span class="text-mut">CORE BACKEND</span>
+            <span class="text-main font-medium">.NET 3.5 → 11 / Python</span>
+          </div>
+          <div class="flex justify-between border-b border-theme pb-2">
+            <span class="text-mut">CLOUD & OPS</span>
+            <span class="text-main font-medium">AWS / GCP / Azure DevOps</span>
+          </div>
+          <div class="flex justify-between pb-1">
+            <span class="text-mut">AI ENGINEERING</span>
+            <span class="text-acc font-medium">LLMs / Agentes / RAG</span>
+          </div>
+        </div>
+        <div class="mt-6 pt-3 border-t border-theme text-[11px] text-mut flex justify-between">
+          <span>TRAYECTORIA: 9+ AÑOS</span>
+          <span>BUENOS AIRES, AR</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Explorador Interactivo Estilo IDE -->
+    <div class="surface-panel">
+      <!-- Barra de pestañas -->
+      <div role="tablist" class="flex overflow-x-auto border-b border-theme font-mono text-xs" style="background-color: var(--bg-subpanel);">
+        <button type="button" role="tab" aria-selected="true" data-tab="trayectoria" id="tab-trayectoria" class="tab-btn tab-active px-5 py-3 border-r border-theme whitespace-nowrap cursor-pointer">
+          01_Trayectoria_2017_2026.log
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-tab="arquitectura" id="tab-arquitectura" class="tab-btn tab-inactive px-5 py-3 border-r border-theme whitespace-nowrap cursor-pointer">
+          02_Arquitectura_Stack.cs
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-tab="ai" id="tab-ai" class="tab-btn tab-inactive px-5 py-3 border-r border-theme whitespace-nowrap cursor-pointer">
+          03_AI_Engineering.py
+        </button>
+        <button type="button" role="tab" aria-selected="false" data-tab="proyectos" id="tab-proyectos" class="tab-btn tab-inactive px-5 py-3 border-r border-theme whitespace-nowrap cursor-pointer">
+          04_Productos_Propios.json
+        </button>
+      </div>
+
+      <!-- Contenido Dinámico de Pestañas -->
+      <div class="p-6 sm:p-8 min-h-[420px]">
+        
+        <!-- PESTAÑA 1: TRAYECTORIA COMPLETA (2017 - 2026) -->
+        <div id="content-trayectoria" class="tab-content space-y-6">
+          
+          <!-- 2026 - Actualidad -->
+          <div class="pl-5 py-1" style="border-left: 2px solid var(--accent);">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs mb-1">
+              <span class="bg-acc-soft text-acc px-2 py-0.5 font-semibold">2026 — ACTUALIDAD</span>
+              <span class="bg-blue-600/20 text-blue-400 border border-blue-500/30 px-2 py-0.5 rounded text-[10px] font-mono font-bold">LN+</span>
+              <span class="text-mut">// ENTERPRISE & MEDIA</span>
+            </div>
+            <h3 class="text-lg font-bold text-main">Senior Software & AI Engineer — LA NACION +</h3>
+            <p class="text-sm text-sec mt-2 leading-relaxed">
+              Desarrollo y evolución de ecosistemas corporativos de alta demanda en .NET moderno y arquitectura cloud. Implementación de pipelines de integración de datos, automatización de despliegues en Azure DevOps, y desarrollo transversal de microservicios ligeros, jobs asíncronos y funciones serverless en <strong class="text-main">Python y AWS Lambda</strong> para procesamiento continuo.
+            </p>
+          </div>
+
+          <!-- 2025 - 2026 -->
+          <div class="pl-5 py-1 border-l-2 border-theme">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs mb-1">
+              <span class="text-acc font-semibold">2025 — 2026</span>
+              <span class="bg-amber-600/20 text-amber-400 border border-amber-500/30 px-2 py-0.5 rounded text-[10px] font-mono font-bold">AGIP / CABA</span>
+              <span class="text-mut">// SECTOR PÚBLICO & ARQUITECTURA</span>
+            </div>
+            <h3 class="text-lg font-bold text-main">Arquitecto de Software .NET & AI — AMERICA VIRTUAL SA (Proyecto AGIP)</h3>
+            <p class="text-sm text-sec mt-2 leading-relaxed">
+              Arquitectura, mantenimiento y evolución del sistema tributario y de impuestos de CABA (<strong class="text-main">AGIP</strong>) bajo estándares de <strong class="text-main">Clean Architecture</strong> en .NET. Liderazgo técnico en la migración y reingeniería de bases de datos NoSQL hacia modelos relacionales de alta integridad, logrando mejoras sustanciales en tiempos de consulta y consistencia. Integración de módulos de IA para validación asistida y optimización de flujos internos, complementado con microservicios y jobs de soporte en Python/AWS.
+            </p>
+          </div>
+
+          <!-- 2023 - 2025 -->
+          <div class="pl-5 py-1 border-l-2 border-theme">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs mb-1">
+              <span class="text-acc font-semibold">2023 — 2025</span>
+              <span class="bg-emerald-600/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded text-[10px] font-mono font-bold">SISEM AI</span>
+              <span class="text-mut">// AI ENGINEERING & LEGALTECH</span>
+            </div>
+            <h3 class="text-lg font-bold text-main">AI Engineer & Full Stack Developer — Sisem</h3>
+            <p class="text-sm text-sec mt-2 leading-relaxed">
+              Diseño y desarrollo integral de un <strong class="text-main">CRM inteligente para estudios jurídicos</strong> potenciando cada caso de uso legal con modelos de Inteligencia Artificial especializados (antes del auge masivo de los frameworks agénticos actuales). Benchmarking, optimización e implementación en producción <strong class="text-main">el mismo día de su lanzamiento</strong> de cada nueva generación de modelos: desde <strong class="text-main">GPT-3.5 / GPT-4</strong> hasta toda la familia <strong class="text-main">DeepSeek</strong> y modelos emergentes, con ciclos mensuales de actualización y ajuste fino de prompts/pipelines.
+            </p>
+          </div>
+
+          <!-- 2021 - 2023 -->
+          <div class="pl-5 py-1 border-l-2 border-theme">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs mb-1">
+              <span class="text-acc font-semibold">2021 — 2023</span>
+              <span class="bg-purple-600/20 text-purple-400 border border-purple-500/30 px-2 py-0.5 rounded text-[10px] font-mono font-bold">OSECAC FINTECH</span>
+              <span class="text-mut">// FINTECH SALUD & MODERNIZACIÓN LEGACY</span>
+            </div>
+            <h3 class="text-lg font-bold text-main">Full Stack Developer & Software Architect — OSECAC (Obra Social)</h3>
+            <p class="text-sm text-sec mt-2 leading-relaxed">
+              Modernización crítica de arquitectura backend: migración de servicios <strong class="text-main">.NET Framework 3.5 a .NET 7</strong>, transición de servicios heredados <strong class="text-main">SOAP a APIs REST</strong> escalables y reconversión de aplicaciones de escritorio Windows Forms a plataformas web en <strong class="text-main">ASP.NET Core</strong>. Implementación end-to-end de la <strong class="text-main">billetera virtual</strong> para afiliados, habilitando la compra digital de bonos y reserva automatizada de turnos médicos.
+            </p>
+          </div>
+
+          <!-- 2019 - 2021 -->
+          <div class="pl-5 py-1 border-l-2 border-theme">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs mb-1">
+              <span class="text-acc font-semibold">2019 — 2021</span>
+              <span class="bg-cyan-600/20 text-cyan-400 border border-cyan-500/30 px-2 py-0.5 rounded text-[10px] font-mono font-bold">GIS / ORACLE</span>
+              <span class="text-mut">// GIS, CARTOGRAFÍA & MOBILE</span>
+            </div>
+            <h3 class="text-lg font-bold text-main">Administrador de Bases de Datos Espaciales & .NET Developer</h3>
+            <p class="text-sm text-sec mt-2 leading-relaxed">
+              Administración de <strong class="text-main">SQL Spatial</strong>, cartografía sobre <strong class="text-main">Oracle</strong> e integración con <strong class="text-main">AutoCAD Maps</strong>. Desarrollo de APIs en <strong class="text-main">.NET Framework 4.5</strong> y aplicaciones móviles de alta precisión geográfica para captura y validación de coordenadas exactas en campo, incorporando reconocimiento de voz, lectura automatizada y normalización de datos georreferenciados.
+            </p>
+          </div>
+
+          <!-- 2017 - 2018 -->
+          <div class="pl-5 py-1 border-l-2 border-theme">
+            <div class="flex flex-wrap items-center gap-2 font-mono text-xs mb-1">
+              <span class="text-acc font-semibold">2017 — 2018</span>
+              <span class="bg-slate-600/20 text-slate-300 border border-slate-500/30 px-2 py-0.5 rounded text-[10px] font-mono font-bold">ENROQUE POS</span>
+              <span class="text-mut">// SISTEMAS COMERCIALES & FACTURACIÓN</span>
+            </div>
+            <h3 class="text-lg font-bold text-main">Creador de Sistemas POS & Facturación Electrónica (Distribuidora ENROQUE)</h3>
+            <p class="text-sm text-sec mt-2 leading-relaxed">
+              Desarrollo a medida de sistemas de Punto de Venta (POS) con integración de <strong class="text-main">facturación electrónica (AFIP)</strong>. Creación del software central de gestión comercial y facturación mayorista para la distribuidora de quesos <strong class="text-main">ENROQUE</strong>, incluyendo motor de actualización automática de listas de precios y control de cuentas corrientes.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- PESTAÑA 2: ARQUITECTURA INTERACTIVA -->
+        <div id="content-arquitectura" class="tab-content hidden">
+          <div class="flex flex-col md:flex-row gap-8">
+            <div class="md:w-1/3 space-y-2 font-mono text-xs">
+              <p class="text-mut mb-3">// Selecciona una capa para inspeccionar:</p>
+              <button type="button" data-layer="dotnet" class="layer-btn layer-active w-full text-left px-4 py-3 transition cursor-pointer">
+                → Ecosistema .NET (3.5 a 11)
+              </button>
+              <button type="button" data-layer="cloud" class="layer-btn layer-inactive w-full text-left px-4 py-3 transition cursor-pointer">
+                → Cloud Serverless & DevOps
+              </button>
+              <button type="button" data-layer="data" class="layer-btn layer-inactive w-full text-left px-4 py-3 transition cursor-pointer">
+                → Motores SQL, NoSQL & Spatial
+              </button>
+              <button type="button" data-layer="web" class="layer-btn layer-inactive w-full text-left px-4 py-3 transition cursor-pointer">
+                → Frontend, Mobile & Node.js
+              </button>
+            </div>
+
+            <!-- Panel de detalle técnico dinámico -->
+            <div id="layer-detail" class="md:w-2/3 surface-subpanel p-6 font-mono text-xs leading-relaxed">
+              <div class="text-acc mb-2 font-semibold">// CAPA: ECOSISTEMA .NET & MIGRACIÓN LEGACY</div>
+              <p class="text-sec font-sans text-sm mb-4">
+                Dominio completo del ciclo de vida .NET: desde mantenimiento y migración de sistemas <strong class="text-main">.NET Framework 3.5 / 4.5</strong> (WinForms, SOAP) hasta arquitecturas modernas en <strong class="text-main">.NET 7, 8, 9, 10 y 11</strong>.
+              </p>
+              <!-- Diagrama Visual de Arquitectura Inicial -->
+              <div class="diagram-preview mb-4">
+                <img src="assets/img/diagram-dotnet.svg" alt="Diagrama Clean Architecture .NET" loading="lazy" />
+              </div>
+              <div class="grid sm:grid-cols-2 gap-3 mb-4">
+                <div class="surface-panel p-3">
+                  <span class="text-mut block mb-1">ARQUITECTURA</span>
+                  <span class="text-main">Clean Architecture, DDD, CQRS + MediatR, Hexagonal</span>
+                </div>
+                <div class="surface-panel p-3">
+                  <span class="text-mut block mb-1">FRAMEWORKS</span>
+                  <span class="text-main">ASP.NET Core Web API, Blazor, EF Core, SignalR</span>
+                </div>
+              </div>
+              <div class="code-box p-3">
+                <span style="color: #00E599;">public record</span> MigrationPath(<span class="text-white">string</span> From = <span style="color: #FCD34D;">"NetFx 3.5 / SOAP"</span>, <span class="text-white">string</span> To = <span style="color: #FCD34D;">".NET 11 / REST"</span>);
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PESTAÑA 3: AI ENGINEERING -->
+        <div id="content-ai" class="tab-content hidden font-mono text-xs">
+          <div class="surface-subpanel p-6">
+            <div class="text-acc mb-4 font-semibold"># AI_ENGINEERING_PRODUCTION.PY</div>
+            <div class="space-y-4">
+              <div class="surface-panel p-4">
+                <div class="text-main font-bold mb-1">01. Adopción Temprana & Benchmarking de Modelos (Day-Zero)</div>
+                <p class="font-sans text-sec text-sm">Experiencia evaluando, optimizando e integrando modelos en producción el mismo día de su lanzamiento (desde GPT-3.5 hasta toda la línea DeepSeek, Gemini y Claude), seleccionando el mejor balance costo/latencia/razonamiento para cada caso de uso.</p>
+              </div>
+              <div class="surface-panel p-4">
+                <div class="text-main font-bold mb-1">02. Sistemas Agénticos & Especialización por Caso de Uso</div>
+                <p class="font-sans text-sec text-sm">Diseño de flujos inteligentes aislados por dominio (legal, tributario, comercial), pipelines de extracción documental, RAG sobre bases relacionales/vectoriales y ejecución local con Ollama.</p>
+              </div>
+              <div class="surface-panel p-4">
+                <div class="text-main font-bold mb-1">03. Microservicios & Jobs Serverless en Python</div>
+                <p class="font-sans text-sec text-sm">Implementación de workers asíncronos, funciones AWS Lambda y pipelines en Google Cloud para orquestar tareas de IA y sincronización de datos sin sobrecargar el core transaccional.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PESTAÑA 4: PROYECTOS PROPIOS -->
+        <div id="content-proyectos" class="tab-content hidden">
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Proyecto 1: TiendArg -->
+            <div class="surface-subpanel p-5 transition flex flex-col justify-between">
+              <div>
+                <!-- Mockup Visual -->
+                <div class="project-img-wrapper mb-4">
+                  <img src="assets/img/mockup-tiendarg.svg" alt="Preview TiendArg — POS & E-Commerce" loading="lazy" />
+                </div>
+                <div class="flex justify-between items-center font-mono text-xs mb-2">
+                  <span class="text-acc font-semibold">VENTURE_01 // SAAS</span>
+                  <span class="text-mut">.NET + Blazor + SQL</span>
+                </div>
+                <h3 class="text-lg font-bold text-main mb-2">TiendArg — POS & E-Commerce</h3>
+                <p class="text-sm text-sec mb-4 leading-relaxed">Evolución SaaS multi-tenant para comercios: punto de venta de alta velocidad, facturación automática, inventario en tiempo real, CRM y tienda online conectada.</p>
+              </div>
+              <div class="font-mono text-[11px] text-mut pt-3 border-t border-theme flex justify-between items-center">
+                <span>STACK: Clean Arch • Multi-DB • Azure</span>
+                <span class="text-acc">PRODUCCIÓN</span>
+              </div>
+            </div>
+
+            <!-- Proyecto 2: SoftwArg Solutions -->
+            <div class="surface-subpanel p-5 transition flex flex-col justify-between">
+              <div>
+                <!-- Mockup Visual -->
+                <div class="project-img-wrapper mb-4">
+                  <img src="assets/img/mockup-softwarg.svg" alt="Preview SoftwArg Solutions" loading="lazy" />
+                </div>
+                <div class="flex justify-between items-center font-mono text-xs mb-2">
+                  <span class="text-acc font-semibold">VENTURE_02 // AGENCY & AI</span>
+                  <span class="text-mut">Full Stack & AI</span>
+                </div>
+                <h3 class="text-lg font-bold text-main mb-2">SoftwArg Solutions</h3>
+                <p class="text-sm text-sec mb-4 leading-relaxed">Agencia de ingeniería de software: pipelines de agentes autónomos, automatización empresarial, sistemas de turnos médicos, e-commerce y desarrollo de misión crítica.</p>
+              </div>
+              <div class="font-mono text-[11px] text-mut pt-3 border-t border-theme flex justify-between items-center">
+                <span>WEB: softwarg.ar</span>
+                <span class="text-acc">ACTIVO</span>
+              </div>
+            </div>
+
+            <!-- Proyecto 3: TriviaBíblica -->
+            <div class="surface-subpanel p-5 transition flex flex-col justify-between">
+              <div>
+                <!-- Mockup Visual -->
+                <div class="project-img-wrapper mb-4">
+                  <img src="assets/img/mockup-triviabiblica.svg" alt="Preview TriviaBíblica Multiplayer PWA" loading="lazy" />
+                </div>
+                <div class="flex justify-between items-center font-mono text-xs mb-2">
+                  <span class="text-acc font-semibold">VENTURE_03 // REAL-TIME GAMING</span>
+                  <span class="text-mut">.NET + Redis + SignalR</span>
+                </div>
+                <h3 class="text-lg font-bold text-main mb-2">TriviaBíblica Multiplayer PWA</h3>
+                <p class="text-sm text-sec mb-4 leading-relaxed">Plataforma multijugador en tiempo real de ultrabaja latencia (&lt;18ms) con WebSockets persistentes, backplane distribuido en Redis, PostgreSQL y frontend en Blazor PWA.</p>
+              </div>
+              <div class="font-mono text-[11px] text-mut pt-3 border-t border-theme flex justify-between items-center">
+                <span>STACK: WebSockets • MediatR • CQRS</span>
+                <span class="text-acc">LIVE 2026</span>
+              </div>
+            </div>
+
+            <!-- Proyecto 4: Suite Mayorista ENROQUE -->
+            <div class="surface-subpanel p-5 transition flex flex-col justify-between">
+              <div>
+                <!-- Mockup Visual -->
+                <div class="project-img-wrapper mb-4">
+                  <img src="assets/img/mockup-enroque.svg" alt="Preview Suite Mayorista ENROQUE" loading="lazy" />
+                </div>
+                <div class="flex justify-between items-center font-mono text-xs mb-2">
+                  <span class="text-acc font-semibold">VENTURE_04 // LEGACY ERP & AFIP</span>
+                  <span class="text-mut">.NET + Facturación AFIP</span>
+                </div>
+                <h3 class="text-lg font-bold text-main mb-2">Suite Mayorista ENROQUE</h3>
+                <p class="text-sm text-sec mb-4 leading-relaxed">Sistema de gestión mayorista y facturación electrónica con motor algorítmico de actualización masiva y automática de listas de precios e impacto en cuentas corrientes.</p>
+              </div>
+              <div class="font-mono text-[11px] text-mut pt-3 border-t border-theme flex justify-between items-center">
+                <span>STACK: .NET Framework • SQL • AFIP WS</span>
+                <span class="text-sec">ENTERPRISE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Pie de Página (Footer) Seguro y Minimalista -->
+  <footer class="border-t border-theme py-4 px-4 font-mono text-xs text-mut" style="background-color: var(--bg-panel);">
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <span>© 2026 Adrián Ezequiel Ramírez Bernal</span>
+      <div class="flex items-center gap-4">
+        <a href="https://softwarg.ar" target="_blank" rel="noopener noreferrer" class="hover:underline text-sec">
+          SoftwArg.ar
+        </a>
+        <!-- Correo Protegido Anti-Spam: No expuesto en texto plano estático -->
+        <button type="button" id="secureEmailTrigger" class="hover:underline text-sec flex items-center gap-1.5 cursor-pointer" title="Copiar correo de forma segura">
+          <span id="footerEmailText">contacto [at] softwarg.ar</span>
+          <span class="text-[10px] text-acc border border-theme px-1 py-0.5 rounded">copiar</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Paleta de Comandos (Ctrl + K) -->
+  <div id="cmdModal" role="dialog" aria-modal="true" aria-label="Paleta de Comandos" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-start justify-center pt-24 px-4">
+    <div class="surface-panel w-full max-w-lg shadow-2xl font-mono text-xs border border-theme">
+      <div class="p-3 border-b border-theme flex justify-between items-center">
+        <input id="cmdInput" type="text" placeholder="Filtrar comando o acción..." class="bg-transparent text-main w-full focus:outline-none" autocomplete="off" />
+        <button type="button" data-action="close-cmd" class="text-mut hover:text-main cursor-pointer" title="Cerrar modal (Esc)">ESC</button>
+      </div>
+      <div class="divide-y divide-neutral-500/20 max-h-64 overflow-y-auto">
+        <button type="button" data-cmd-item data-cmd-action="tab" data-cmd-param="trayectoria" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Ver Trayectoria Completa (2017—2026)</span>
+          <span class="text-mut">TAB</span>
+        </button>
+        <button type="button" data-cmd-item data-cmd-action="tab" data-cmd-param="arquitectura" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Inspeccionar Arquitectura & Stack</span>
+          <span class="text-mut">TAB</span>
+        </button>
+        <button type="button" data-cmd-item data-cmd-action="tab" data-cmd-param="ai" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Ver AI Engineering & Modelos</span>
+          <span class="text-mut">TAB</span>
+        </button>
+        <button type="button" data-cmd-item data-cmd-action="tab" data-cmd-param="proyectos" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Ver Productos Propios & Ventures</span>
+          <span class="text-mut">TAB</span>
+        </button>
+        <button type="button" data-cmd-item data-cmd-action="theme" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Alternar Modo Claro / Oscuro</span>
+          <span class="text-acc">THEME</span>
+        </button>
+        <button type="button" data-cmd-item data-cmd-action="copy-email" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Copiar Correo Electrónico Seguro</span>
+          <span class="text-mut">ACTION</span>
+        </button>
+        <button type="button" data-cmd-item data-cmd-action="contact" class="w-full text-left px-4 py-3 text-main hover:opacity-80 flex justify-between cursor-pointer">
+          <span>→ Abrir Cliente de Correo</span>
+          <span class="text-mut">EMAIL</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor Dinámico para Notificaciones Flotantes (Toast) -->
+  <div id="toast-container" aria-live="polite"></div>
+
+  <!-- Script Principal Separado (Buenas Prácticas) -->
+  <script src="js/app.js" defer></script>
+</body>
+</html>
